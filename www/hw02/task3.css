@@ -1,0 +1,32 @@
+#header {
+  font-size: 24pt;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 25px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.link {
+  background: none;
+  border: none;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+#linklist {
+  float: left;
+  width: 33%
+  padding-right: 10px;
+}
+
+#contentcolumn {
+  float: right;
+  width: 67%
+}

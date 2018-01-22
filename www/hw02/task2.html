@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!-- created with assistance from w3school tutorials on HTML and javascript -->
+<head>
+  <title>Homework 2: Task 2</title>
+</head>
+
+<body>
+  <h1 id="currNum">10</h1>
+  <br />
+  <button onclick="numberPopup()">Alert</button>
+  <br />
+  <button onclick="incrementNum()">Increment</button>
+  <br />
+  <button onclick="appendParagraph()">Write</button>
+
+  <script>
+  // makes an alert popup with the number displayed
+  function numberPopup() {
+    var number = document.getElementById("currNum").innerHTML;
+    window.alert(number);
+  }
+  // adds 1 to the number displayed
+  function incrementNum() {
+    document.getElementById("currNum").innerHTML =
+    Number(document.getElementById("currNum").innerHTML) + 1;
+  }
+  // adds a paragraph to the bottom of the page with the current number
+  // ATTRIBUTION: w3school: HTML DOM createElement() method
+  function appendParagraph() {
+    var number = document.createTextNode(document.getElementById("currNum").innerHTML);
+    var para = document.createElement("P");
+    para.appendChild(number);
+    document.body.appendChild(para);
+  }
+  </script>
+
+</body>
+</html>
